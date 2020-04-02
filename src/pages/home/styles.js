@@ -13,13 +13,17 @@ export default StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 40
   },
-  containerInput: {
-    backgroundColor: '#9cc3c5',
-    alignSelf: 'stretch',
-    padding: 5
-  },
-  inputText: {
-    backgroundColor: '#fff',
-    padding: 5
+  searchButton: {
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    backgroundColor: '#61dafb',
+    borderWidth: 2,
+    borderRadius: 10,
+    borderColor: '#FFF'
+  }, 
+  searchButtonText: {
+    color: '#FFF',
+    fontWeight: 'bold',
+    fontSize: 20,
   }
 })
