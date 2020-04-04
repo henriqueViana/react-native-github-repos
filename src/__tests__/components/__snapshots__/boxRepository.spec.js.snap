@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`-----BoxRepository----- should render correcty BoxRepository 1`] = `
+<BoxRepository
+  repository={
+    Object {
+      "description": "descriptionRepo",
+      "id": 1,
+      "name": "nameRepo",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "alignSelf": "stretch",
+        "backgroundColor": "#FFF",
+        "borderColor": "#CCC",
+        "borderRadius": 5,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "marginBottom": 10,
+        "padding": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "alignSelf": "stretch",
+          "backgroundColor": "#FFF",
+          "borderColor": "#CCC",
+          "borderRadius": 5,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "marginBottom": 10,
+          "padding": 10,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 0,
+            "flexGrow": 5,
+            "width": 100,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flex": 0,
+              "flexGrow": 5,
+              "width": 100,
+            }
+          }
+        >
+          <Text>
+            <Text>
+              nameRepo
+            </Text>
+          </Text>
+          <Text
+            numberOfLines={1}
+            style={
+              Object {
+                "color": "#ccc",
+                "fontSize": 13,
+                "marginTop": 5,
+              }
+            }
+          >
+            <Text
+              numberOfLines={1}
+              style={
+                Object {
+                  "color": "#ccc",
+                  "fontSize": 13,
+                  "marginTop": 5,
+                }
+              }
+            >
+              descriptionRepo
+            </Text>
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "flex-end",
+            "flex": 0,
+            "flexGrow": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "flex-end",
+              "flex": 0,
+              "flexGrow": 1,
+            }
+          }
+        >
+          <Icon
+            allowFontScaling={false}
+            color="#000"
+            name="chevron-right"
+            size={25}
+          >
+            <Text>
+              <Text />
+            </Text>
+          </Icon>
+        </View>
+      </View>
+    </View>
+  </View>
+</BoxRepository>
+`;

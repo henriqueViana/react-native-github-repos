@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`-----Home----- should renders correcty HomePage 1`] = `
+exports[`-----Home----- should renders correcty Profile Page 1`] = `
 <ContextProvider
   value={
     Object {

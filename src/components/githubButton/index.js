@@ -4,12 +4,12 @@ import { AntDesign } from '@expo/vector-icons'
 
 import styles from './styles'
 
-export default function GithubButton(props) {
+export default function GithubButton({ url }) {
   return (
     <View style={styles.containerGithubButton}>
       <View style={styles.githubButton}>
         <TouchableOpacity
-          onPress={() => Linking.openURL(props.url)}
+          onPress={() => Linking.openURL(url)}
         >
           <View style={styles.contentButton}>
             <AntDesign

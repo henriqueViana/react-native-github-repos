@@ -25,4 +25,21 @@ describe('-----SearchRepository-----', () => {
     const childComponent = wrapper.find(FontAwesome)
     expect(childComponent).toHaveLength(1)
   })  
+
+  it('should render a defaultValue property', () => {
+    const defaultValue = 'userName'
+    const wrapper = mount(<SearchRepository defaultValue={defaultValue}/>)
+
+    expect(wrapper.props().defaultValue).toEqual(defaultValue)
+  })
+
+  it('should render a change when onChangeText is dispatch', () => {
+    const text = 'changedText'
+    const onChangeText = jest.fn()
+    
+    const wrapper = shallow(<SearchRepository onChangeText={onChangeText}/>)
+    wrapper.find(TextInput).simulate('changeText', text)
+
+    expect(onChangeText).toHaveBeenCalledWith(text)
+  })
 })

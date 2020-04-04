@@ -31,10 +31,7 @@ export default function Home() {
       <Text style={styles.title}>Busca de Repositórios</Text>
       
       <SearchRepository
-        onChangeText={userName => 
-          changeInput(userName)
-
-        }
+        onChangeText={changeInput}
         defaultValue={userName}
       ></SearchRepository>
 

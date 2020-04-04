@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`-----Repository----- should render correcty Rrepository page 1`] = `
+<ForwardRef(NavigationContainer)>
+  <StackNavigator>
+    <Screen
+      component={[Function]}
+      initialParams={Object {}}
+      name="MockedScreen"
+    />
+  </StackNavigator>
+</ForwardRef(NavigationContainer)>
+`;

@@ -2,7 +2,7 @@ import React from 'react'
 import { Provider } from 'react-redux'
 import { shallow } from 'enzyme'
 
-import Home from '../../pages/home'
+import Profile from '../../pages/profile'
 import mockStore from '../../__mocks__/mockStore'
 import MockNavigator from '../../__mocks__/mockNavigator'
 
@@ -16,12 +16,12 @@ describe('-----Home-----', () => {
 
     wrapper = shallow(
       <Provider store={store}>
-        <MockNavigator component={Home} />
+        <MockNavigator component={Profile} />
       </Provider>
     )
   });
 
-  it('should renders correcty HomePage', () => {
+  it('should renders correcty Profile Page', () => {
     expect(wrapper).toMatchSnapshot()
   })
 })
