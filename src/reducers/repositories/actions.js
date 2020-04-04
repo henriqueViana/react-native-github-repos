@@ -1,4 +1,4 @@
-import { GET_REPOSITORIES } from './types'
+import { GET_REPOSITORIES, CLEAR_REPOSITORIES } from './types'
 import api from '../../services/api'
 
 export const getRepositories = nickname => async dispatch => {
@@ -17,5 +17,11 @@ export const getRepositories = nickname => async dispatch => {
       error: { errorMessage: 'Usuário não encontrado' }
     })
   }
-  
+}
+
+export const clearRepositories = () => {
+  return {
+    type: CLEAR_REPOSITORIES,
+    payload: []
+  }
 }

@@ -1,9 +1,10 @@
 import React from 'react'
-import { Text, View, TouchableOpacity } from 'react-native'
+import { Text, View, TouchableOpacity, WebView, Linking } from 'react-native'
 import { useRoute } from '@react-navigation/native'
 import { useNavigation } from '@react-navigation/native'
 import { AntDesign, FontAwesome } from '@expo/vector-icons'
 import moment from 'moment'
+import GithubButton from '../../components/githubButton'
 
 import styles from './styles'
 
@@ -13,9 +14,6 @@ export default function Home() {
 
   const navigation = useNavigation()
   const createdAt = moment(repository.created_at).format('DD/MM/YYYY')
-
-  // stargazers_count
-  // forks_count
 
   return (
     <View style={styles.container}>
@@ -78,6 +76,7 @@ export default function Home() {
         </View>
       </View>
 
+      <GithubButton url={repository.html_url} />
     </View>
   );
 }

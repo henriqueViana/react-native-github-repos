@@ -6,10 +6,17 @@ export default StyleSheet.create({
     marginBottom: 70,
     backgroundColor: '#d2e0e2',
     alignSelf: 'stretch',
-    padding: 5
+    padding: 5,
+  },
+  content: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#FFF',
+    paddingHorizontal: 10
   },
   input: {
-    backgroundColor: '#fff',
-    padding: 5
+    flex: 1,
+    backgroundColor: '#FFF',
+    padding: 10,
   }
 })

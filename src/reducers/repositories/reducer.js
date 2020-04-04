@@ -1,4 +1,4 @@
-import { SET_REPOSITORIES, GET_REPOSITORIES } from './types'
+import { GET_REPOSITORIES, CLEAR_REPOSITORIES } from './types'
 
 const initialState = []
 
@@ -9,6 +9,8 @@ export default (state = initialState, action) => {
 
   switch(action.type) {
     case GET_REPOSITORIES:
+      return action.payload
+    case CLEAR_REPOSITORIES:
       return action.payload
     default:
       return state

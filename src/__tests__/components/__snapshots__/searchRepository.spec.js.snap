@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`-----SearchRepository----- should renders correcty SearchRepository 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "stretch",
+      "backgroundColor": "#d2e0e2",
+      "marginBottom": 70,
+      "padding": 5,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#FFF",
+        "flexDirection": "row",
+        "paddingHorizontal": 10,
+      }
+    }
+  >
+    <Icon
+      allowFontScaling={false}
+      color="#000"
+      name="search"
+      size={15}
+    />
+    <TextInput
+      allowFontScaling={true}
+      placeholder="Nome do usuário"
+      rejectResponderTermination={true}
+      style={
+        Object {
+          "backgroundColor": "#FFF",
+          "flex": 1,
+          "padding": 10,
+        }
+      }
+      underlineColorAndroid="transparent"
+    />
+  </View>
+</View>
+`;

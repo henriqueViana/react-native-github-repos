@@ -25,5 +25,24 @@ export default StyleSheet.create({
     color: '#FFF',
     fontWeight: 'bold',
     fontSize: 20,
+  },
+  errorMessage: {
+    marginTop: 20,
+    fontWeight: 'bold',
+    color: '#cb2431'
+  },
+  loading: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    alignSelf: 'stretch',
+    backgroundColor: '#FFF',
+    opacity: .8,
+    position: 'absolute',
+    top: 0, 
+    bottom: 0, 
+    left: 0, 
+    right: 0,
+    zIndex: 2,
   }
 })

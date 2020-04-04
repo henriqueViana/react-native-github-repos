@@ -1,6 +1,6 @@
 import React from 'react'
-import { View, Text, TouchableOpacity } from 'react-native'
-import { AntDesign } from '@expo/vector-icons'
+import { View, Text } from 'react-native'
+import { Entypo } from '@expo/vector-icons'
 
 import styles from './styles'
 
@@ -17,9 +17,9 @@ export default function BoxRepository({ repository }) {
       </View>
 
       <View style={styles.nextIcon}>
-        <AntDesign 
-          name='arrowright' 
-          size={20} 
+        <Entypo 
+          name='chevron-right' 
+          size={25} 
           color='#000'
         />
       </View>

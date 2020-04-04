@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`-----GithubButton----- should renders correcty SearchRepository 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "alignSelf": "stretch",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "borderColor": "#000",
+        "borderWidth": 1,
+        "padding": 5,
+        "width": 120,
+      }
+    }
+  >
+    <TouchableOpacity
+      activeOpacity={0.2}
+      onPress={[Function]}
+    >
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Icon
+          allowFontScaling={false}
+          color="#000"
+          name="github"
+          size={40}
+        />
+        <View
+          style={
+            Object {
+              "marginLeft": 10,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "fontSize": 13,
+              }
+            }
+          >
+            Abrir no
+          </Text>
+          <Text
+            style={
+              Object {
+                "fontSize": 18,
+                "fontWeight": "bold",
+              }
+            }
+          >
+            GitHub
+          </Text>
+        </View>
+      </View>
+    </TouchableOpacity>
+  </View>
+</View>
+`;

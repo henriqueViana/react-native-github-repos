@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { Text, View, TouchableOpacity, ActivityIndicator } from 'react-native'
 import { useSelector, useDispatch } from 'react-redux'
 import { useNavigation } from '@react-navigation/native'
@@ -10,35 +10,54 @@ import styles from './styles'
 import SearchRepository from '../../components/searchRepository'
 
 export default function Home() {
-  const [nickname, changeInput] = useState('')
+  const [userName, changeInput] = useState('')
+  const [loading, showLoading] = useState(false)
+  const [goNextPage, setGoNextPage] = useState(false)
 
-  // const repositories = useSelector(state => state.repositories)
+  const repositories = useSelector(state => state.repositories)
   const dispatch = useDispatch()
   const navigation = useNavigation()
 
-  // console.log(repositories)
-
   return (
     <View style={styles.container}>
-      {/* <ActivityIndicator size='large' color='#0ff' /> */}
+      {loading && 
+        <View style={styles.loading}>
+          <ActivityIndicator 
+            size='large' 
+            color='#0ff'
+          />
+        </View>
+      }
       <Text style={styles.title}>Busca de Repositórios</Text>
       
       <SearchRepository
-        onChangeText={changeInput}
-        dafaultValue={nickname}
+        onChangeText={userName => 
+          changeInput(userName)
+
+        }
+        defaultValue={userName}
       ></SearchRepository>
 
       <TouchableOpacity
         style={styles.searchButton}
         onPress={async () => {
-          await dispatch(getRepositories(nickname))
-          navigation.navigate('Profile')
+          showLoading(true)
+          setGoNextPage(true)
+          await dispatch(getRepositories(userName))
+          showLoading(false)
+          setGoNextPage(false)
+
         }}
       >
         <Text style={styles.searchButtonText}>Buscar</Text>
       </TouchableOpacity>
 
-      {/* <Text>{repositories.errorMessage}</Text> */}
+      <Text style={styles.errorMessage}>{repositories.errorMessage}</Text>
+
+      {!repositories.errorMessage && 
+        repositories.length > 0 && 
+        goNextPage && navigation.navigate('Profile')}
+
     </View>
   );
 }
