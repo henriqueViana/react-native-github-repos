@@ -4,11 +4,11 @@ import { useRoute } from '@react-navigation/native'
 import { useNavigation } from '@react-navigation/native'
 import { AntDesign, FontAwesome } from '@expo/vector-icons'
 import moment from 'moment'
-import GithubButton from '../../components/githubButton'
+import GithubButton from '../../components/GithubButton'
 
 import styles from './styles'
 
-export default function Home() {
+export default function Repository() {
   const route = useRoute()
   const { repository } = route.params
 

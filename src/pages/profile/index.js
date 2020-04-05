@@ -3,7 +3,7 @@ import { Text, View, Image, TouchableOpacity, FlatList } from 'react-native';
 import { useSelector, useDispatch } from 'react-redux'
 import { useNavigation } from '@react-navigation/native'
 import { AntDesign } from '@expo/vector-icons'
-import BoxRepository from '../../components/boxRepository' 
+import BoxRepository from '../../components/BoxRepository' 
 
 import { clearRepositories } from '../../reducers/repositories/actions'
 

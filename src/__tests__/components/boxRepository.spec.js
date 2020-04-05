@@ -1,7 +1,7 @@
 import React from 'react'
 import { mount } from 'enzyme'
 
-import BoxRepository from '../../components/boxRepository'
+import BoxRepository from '../../components/BoxRepository'
 
 let repository
 let wrapper

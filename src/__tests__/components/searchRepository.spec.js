@@ -3,7 +3,7 @@ import { shallow } from 'enzyme'
 import { TextInput } from 'react-native'
 import { FontAwesome } from '@expo/vector-icons'
 
-import SearchRepository from '../../components/searchRepository'
+import SearchRepository from '../../components/SearchRepository'
 
 describe('-----SearchRepository-----', () => {
 

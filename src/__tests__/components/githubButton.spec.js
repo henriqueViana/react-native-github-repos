@@ -3,7 +3,7 @@ import { shallow, mount } from 'enzyme'
 import { TouchableOpacity } from 'react-native'
 import { AntDesign } from '@expo/vector-icons'
 
-import GithubButton from '../../components/githubButton'
+import GithubButton from '../../components/GithubButton'
 
 describe('-----GithubButton-----', () => {
   it('should renders correcty SearchRepository', () => {

@@ -2,9 +2,9 @@ import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 
-import Home from '../pages/home'
-import Profile from '../pages/profile'
-import Repository from '../pages/repository'
+import Home from '../pages/Home'
+import Profile from '../pages/Profile'
+import Repository from '../pages/Repository'
 
 const Stack = createStackNavigator()
 

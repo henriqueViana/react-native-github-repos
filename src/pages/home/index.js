@@ -2,13 +2,12 @@ import React, { useState } from 'react'
 import { Text, View, TouchableOpacity, ActivityIndicator, Keyboard } from 'react-native'
 import { useSelector, useDispatch } from 'react-redux'
 import { useNavigation } from '@react-navigation/native'
-import { getItem, setItem } from '../../storage'
 
 import { getRepositories } from '../../reducers/repositories/actions'
 
 import styles from './styles'
 
-import SearchRepository from '../../components/searchRepository'
+import SearchRepository from '../../components/SearchRepository'
 
 export default function Home() {
   const [userName, changeInput] = useState('')
