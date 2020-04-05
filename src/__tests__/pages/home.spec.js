@@ -1,4 +1,5 @@
 import React from 'react'
+import { TouchableOpacity } from 'react-native'
 import { Provider } from 'react-redux'
 import { shallow } from 'enzyme'
 

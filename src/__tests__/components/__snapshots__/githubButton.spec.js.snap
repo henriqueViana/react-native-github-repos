@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`-----GithubButton----- should renders correcty SearchRepository 1`] = `
+exports[`-----GithubButton----- should renders correcty GithubButton 1`] = `
 <View
   style={
     Object {

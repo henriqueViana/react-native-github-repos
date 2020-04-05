@@ -6,29 +6,23 @@ import { AntDesign } from '@expo/vector-icons'
 import GithubButton from '../../components/GithubButton'
 
 describe('-----GithubButton-----', () => {
-  it('should renders correcty SearchRepository', () => {
-    const wrapper = shallow(<GithubButton />)
+  let wrapper
+
+  beforeEach(() => {
+    wrapper = shallow(<GithubButton />)
+  })
+
+  it('should renders correcty GithubButton', () => {
     expect(wrapper).toMatchSnapshot()
   })
 
   it('should render a TouchableOpacity child component', () => {
-    const wrapper = shallow(<GithubButton />)
-
     const childComponent = wrapper.find(TouchableOpacity)
     expect(childComponent).toHaveLength(1)
   })
 
   it('should render a AntDesign icon child component', () => {
-    const wrapper = shallow(<GithubButton />)
-
     const childComponent = wrapper.find(AntDesign)
     expect(childComponent).toHaveLength(1)
-  })
-
-  it('should render a url property', () => {
-    const url = 'https://github.com'
-    const wrapper = mount(<GithubButton url={url} />)
-
-    expect(wrapper.props().url).toEqual(url)
   })
 })
