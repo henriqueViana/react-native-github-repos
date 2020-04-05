@@ -8,7 +8,6 @@ import GithubButton from '../../components/GithubButton'
 import styles from './styles'
 
 export default function Repository(props) {
-  console.log('propssss', props)
   const route = useRoute()
   const { repository } = route.params
 
