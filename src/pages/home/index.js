@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
-import { Text, View, TouchableOpacity, ActivityIndicator } from 'react-native'
+import { Text, View, TouchableOpacity, ActivityIndicator, Keyboard } from 'react-native'
 import { useSelector, useDispatch } from 'react-redux'
 import { useNavigation } from '@react-navigation/native'
+import { getItem, setItem } from '../../storage'
 
 import { getRepositories } from '../../reducers/repositories/actions'
 
@@ -17,6 +18,23 @@ export default function Home() {
   const repositories = useSelector(state => state.repositories)
   const dispatch = useDispatch()
   const navigation = useNavigation()
+
+  const searchRepositoryAction = async () => {
+    Keyboard.dismiss()
+    beforeGetRepositories()
+    await dispatch(getRepositories(userName))
+    afterGetRepositories()
+  }
+
+  const beforeGetRepositories = () => {
+    showLoading(true)
+    setGoNextPage(true)
+  }
+
+  const afterGetRepositories = () => {
+    showLoading(false)
+    setGoNextPage(false)
+  }
 
   return (
     <View style={styles.container}>
@@ -37,14 +55,7 @@ export default function Home() {
 
       <TouchableOpacity
         style={styles.searchButton}
-        onPress={async () => {
-          showLoading(true)
-          setGoNextPage(true)
-          await dispatch(getRepositories(userName))
-          showLoading(false)
-          setGoNextPage(false)
-
-        }}
+        onPress={async () => searchRepositoryAction()}
       >
         <Text style={styles.searchButtonText}>Buscar</Text>
       </TouchableOpacity>
