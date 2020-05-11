@@ -1,62 +1,62 @@
-# Desafio desenvolvimento mobile - Radix
+# React Native Github Repos
 
-## Pré-requisitos
+## Requirements
 
-Para rodar o projeto, é necessário ter instalado as seguintes dependencias:
+To run the project, it is necessary to have the following facilities installed:
 
-**Node.js** Tenha, de preferência, instalado a versão estável mais recente do [Node.js](https://nodejs.org/en/download/) ou uma versão >= 10
+**Node.js** Preferably installed the latest stable version of  [Node.js](https://nodejs.org/en/download/) or a version >= 10
 
-**Expo** Tenha instalado o expo-cli globalmente
+**Expo** Have installed expo-cli globally
 
-## Instalação das dependências globais
+## Installation of global dependencies
 
-*Instalando o expo-cli*
+*Installing  expo-cli*
 
 ```sh
 npm i -g expo-cli
 
-OU
+OR
 
 yarn global add expo-cli
 ```
 
-## Baixando o projeto
+## Downloading the project
 
-*Clonando o projeto*
+*Cloning the project*
 
 ```sh
 git clone https://gitlab.com/henriqueviana/mobile-challenger.git
 ```
 
-## instalação das dependências locais do projeto
+## Installation of local project dependencies
 
-*Entrando no diretório do projeto e intalando as dependências*
+*Entering the project directory and installing the dependencies*
 
 ```sh
 cd mobile-challenger
 npm i
 
-OU
+OR
 
 yarn add
 ```
 
-## Rodando o projeto localmente
+## Running the project locally
 
 ```sh
 npm start
 
-OU
+OR
 
 yarn start
 ```
 
-## Rodando os testes
+## Running the tests
 
 ```sh
 npm test
 
-OU
+OR
 
 yarn test
 ```
