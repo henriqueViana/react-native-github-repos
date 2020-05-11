@@ -1,5 +1,7 @@
 # React Native Github Repos
 
+*A simple React Native application that consumes the Github API and displays repositories and their details from a username*
+
 ## Requirements
 
 To run the project, it is necessary to have the following facilities installed:
